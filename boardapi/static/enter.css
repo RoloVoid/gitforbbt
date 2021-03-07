@@ -1,0 +1,71 @@
+html {
+    font-size: 50px;
+  }
+.submit{
+    font-size: 25px;
+}
+.return{
+    font-size: 25px;
+}
+.login {
+    font-size: 25px;
+}
+.register{
+    font-size: 25px;
+}
+body{
+    text-align: center;
+    background-color:AliceBlue;
+}
+a{
+    color:blueviolet;
+    font-size:25px;
+    padding:5px 1rem;
+    cursor:pointer;
+    text-decoration:none;
+}
+a:hover{
+    font-weight: 700;
+}
+#alert{
+    margin-top:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-bottom:0;
+    font-size: 20px;
+    color:rgb(219, 37, 37)
+}
+fieldset{
+    background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603452736742&di=ec938dd3d5c1fe2bd18da9923e5d3961&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F03%2F65%2F76%2F6457aee3f438015.jpg);
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height:300px;
+    position:absolute;
+    padding-top:8px;
+}
+form{
+    display:flex;
+    justify-content: center;
+    /*align-items: center;*/
+    width:100%;
+    height:600px;
+}
+.username_box .password_box{
+    position:absolute;
+    width: 100%;
+    height:30px;
+    
+}
+.username{
+    width:70%;
+    border-radius:5px;
+    text-align:center;
+    height:50px;
+}
+.password{
+    width:70%;
+    border-radius:5px;
+    text-align:center;
+    height:50px;
+}

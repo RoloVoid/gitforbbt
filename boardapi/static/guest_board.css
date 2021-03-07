@@ -1,0 +1,57 @@
+html {
+    /*height: 100vh;*/
+    /*width: 100vw;*/
+    font-size: 40px;
+  }
+input{
+    font-size: 25px;
+}
+body{
+    text-align: center;
+    background-color:AliceBlue;
+}
+.right{
+    float:right;
+}
+.commentArea{
+    font-size:40px;
+    width:22rem;
+    height:4em;
+    overflow:auto;
+    border:1px solid rgb(224, 33, 208);
+}
+a{
+    color:blueviolet;
+    padding:5px 0.2rem;
+    cursor:pointer;
+    text-decoration:none;
+}
+a:hover{
+    font-weight: 700;
+}
+.clear{
+    clear:both;
+}
+.board{
+    font-size:40px;
+    margin-left:0.2rem;
+}
+.text{
+    text-align:left;
+    border:1px solid rgb(16, 158, 144);
+    padding-left:0.3rem;
+}
+.nickname{
+    text-align: left;
+    font-weight:700;
+}
+.date{
+    text-align: left;
+    font-size:30px;
+    color:rgb(139, 135, 129);
+}
+.last{
+    text-align: left;
+    font-size:30px;
+    color:rgb(139, 135, 129);
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{url_for('static',filename ='guest_board.css')}}" />
+<title>guest_board</title>
+</head>
+<body>
+<input type="button" value="返回" class="right" onclick="location.href='/'" />
+<div class="clear">
+    <h3 style="overflow: auto">留言板</h3>
+    <textarea style="overflow: auto" id="commentArea" class="commentArea"></textarea>
+    <div><p style="overflow: auto">要留言请<a style="overflow: auto" href="/session">登录</a></p></div>
+</div>
+<div style="overflow: auto" class="board">
+    <div class="nickname">aaaaaaaaa</div>
+    <div class="date">2020.12.31</div>
+    <div class="text" style="overflow:auto">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</div>
+    <div class="last">编辑：2021.1.23</div>
+</div>
+<script src={{ url_for('static', filename="guest_board.js")}}></script>
+</body>
+</html>

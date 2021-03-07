@@ -1,0 +1,37 @@
+html {
+    /*height: 100vh;*/
+    /*width: 100vw;*/
+    font-size: 3vw;
+  }
+input{
+    font-size: 3vw;
+}
+body{
+    text-align: center;
+    background-color:AliceBlue;
+}
+.right{
+    float:right;
+}
+.clear{
+    clear:both;
+}
+.boardId{
+    width:5vw;
+}
+.text{
+    height:10vh;
+    width:85vw;
+}
+.id{
+    text-align: left;
+}
+.nickname{
+    text-align: left;
+}
+.date{
+    text-align: left;
+}
+.last{
+    text-align: left;
+}

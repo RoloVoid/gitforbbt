@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{url_for('static',filename ='enter.css')}}"/>
+<title>register</title>
+</head>
+<body>
+<form>
+<fieldset>
+<legend>注册</legend>
+<div class="username_box">
+    <label for="username">用户名:<input type="text" id="username" class="username"/></label></br>
+</div>
+<div class="password_box">
+    <lable for="password">密码:<input type="password" id="password" class="password"/></lable></br>
+</div>
+<input type="button" value="提交" class="submit" onclick="postNewUser()" /> <input type="button" value="返回" class="return" onclick="location.href='/session'" />
+<p id="alert">WELCOME</p>
+</fieldset>
+</form>
+<script src={{ url_for('static', filename="enter.js")}}></script>
+</body>
+</html>

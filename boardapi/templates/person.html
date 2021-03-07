@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{url_for('static',filename ='person.css')}}"/>
+<title>person</title>
+</head>
+<body>
+    <input type="button" value="注销" class="right" onclick="logout()" /> 
+    <input type="button" value="返回" class="right" onclick="location.href='/'" />
+    <p id="username" class="username"></p>
+    <div class="info-box">
+        <h3>个人信息</h3>
+        <div class="line"></div>
+        <div class="info">
+            <label>用户名</label>
+            <div id="username0"></div>
+        </div>
+        <div class="info">
+            <label>昵称</label>
+            <div id="nickname"></div>
+        </div>
+        <div class="info">
+            <label>年龄</label>
+            <div id="age"></div>
+        </div>
+        <div class="info">
+            <label>性别</label>
+            <div id="gender"></div>
+        </div>
+    </div>
+    <p></p>
+    <p></p>
+    <div>
+        <div class="change-box" id="change-box">
+            <input type="button" id="button" class="change" value="修改" onclick="edit()"/>
+        </div>
+        <div id="box">
+            <table class="box" border="1">
+                <tr>
+                    <th>昵称</th>
+                    <th>年龄</th>
+                    <th>性别</th>
+                    <th>密码</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="nickname1" class="in"/></td>
+                    <td><input type="text" id="age1" class="in"/></td>
+                    <td><select name="gender" id="gender1" class="in">
+                        <option value="请选择" selected="selected">请选择</option>
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                        <option value="保密">保密</option>
+                    </select></td>
+                    <td><input type="password" id="password1" class="in"/></td>
+            </table>
+            <div class="change-box">
+                <input type="button" id="save" class="change" value="保存" onclick="change()"/>
+                <input type="button" id="cancel" class="change" value="取消" onclick="cancel()"/>
+            </div>
+        </div>
+    </div>
+    <div id="alert">1</div>
+    <script src={{ url_for('static', filename="person.js")}}></script>
+</body>
+</html>

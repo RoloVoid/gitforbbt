@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <link rel="stylesheet" href="{{url_for('static',filename ='board.css')}}" />
+<title>board</title>
+</head>
+<body>
+<div>
+    <input type="button" value="退出" style="float:right;" onclick="logout()" /><input type="button" value="个人" style="float:right;" onclick="location.href='user'" />
+    <p id="username"></p>
+    <div>留言板</div>
+    <textarea id="commentArea" class="commentArea"></textarea>
+    <div>
+        <input type="button" onclick="postComment()" value="发布" />
+    </div>
+</div>
+<div>
+    <div>修改</div>
+    <div>ID:<input type="text" id="id" /></div>
+    <div>修改内容:</div>
+    <textarea id="edit" class="commentArea"></textarea>
+    <div>
+        <input type="button" onclick="edit_text()" value="修改" />
+        <input type="button" onclick="erase()" value="删除" />
+    </div>
+</div>
+<div id="alert"></div>
+<ul class="board" id="UL">
+<li class="item" id=id>
+     <div class="info">
+         <div class="nickname">nickname</div>
+         <div class="date">date</div>
+         <fieldset class="text">text</fieldset>
+         <div class="last">last</div>
+     </div>
+</li>
+</ul>
+</body>
+<script src={{ url_for('static', filename="board.js")}}></script>
+</html>
